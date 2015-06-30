@@ -1,2 +1,2 @@
 # Iron-Man-Curtain
-Iron Man overlay with an smooth transition
+Iron Man curtain-overlay with an smooth transition

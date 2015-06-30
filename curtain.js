@@ -9,11 +9,11 @@ $("#reanimate").click(function() {
 	
 	  $(".curtain-layer-one, h2").fadeOut({
 	  "opacity":".1"
-	  }, 50)
+	  }, 100)
 	   $(".curtain-layer-two")
 	   .delay(200).fadeOut({
 	   "opacity":".1"
-	   }, 50)
+	   }, 100)
 	   $(".curtain-layer-three")
 	   .delay(300).fadeOut({ 
 	   "opacity":".1"

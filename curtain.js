@@ -1,19 +1,17 @@
 $(document).ready(function () {
 
-$("#reanimate").click(function() { //** function to open the overlay curtain *//
+$("#reanimate").click(function() {
   $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn({"opacity":"1"}, 400)
-
 	$(".six-packs")
 	   .delay(600).fadeIn({
 	   "opacity":"1"
 	   }, 600)
 	   });
-});
 
 
-	$("h2").click(function Curtain() { //* function of the curtain animation *//
+	$("h2").click(function Curtain() { 
 	
-	  $(".curtain-layer-one, h2, .six-packs").fadeOut({ 
+	  $(".curtain-layer-one, h2, .six-packs").delay(100).fadeOut({
 	  "opacity":".1"
 	  }, 100)
 	   $(".curtain-layer-two")

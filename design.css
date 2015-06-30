@@ -133,3 +133,102 @@ color:white;
 border-radius:7px;
 cursor:pointer;
 }
+
+.six-packs {
+ width:500px;
+ margin:auto;
+ height:390px;
+ position:fixed;
+ padding:0px;
+ left:30%;
+ top:20%;
+}
+.one-pack {
+margin-left:0%;
+top:0px;
+width:250px;
+height:130px;
+float:left;
+background:#714141;
+position:absolute;
+text-align:center;
+font-size:2em;
+color:white;
+cursor:pointer;
+}
+
+.two-pack {
+margin-left:250px;
+top:0px;
+width:250px;
+height:130px;
+float:left;
+background:#3a8379;
+position:absolute;
+text-align:center;
+font-size:2em;
+color:white;
+cursor:pointer;
+}
+.three-pack {
+margin-left:0%;
+top:130px;
+width:250px;
+height:130px;
+float:left;
+background:#877038;
+position:absolute;
+text-align:center;
+font-size:2em;
+color:white;
+cursor:pointer;
+}
+.four-pack {
+margin-left:250px;
+top:130px;
+width:250px;
+height:130px;
+float:left;
+background:#6c2c6a;
+position:absolute;
+text-align:center;
+font-size:2em;
+color:white;
+cursor:pointer;
+}
+
+.five-pack {
+margin-left:0%;
+top:260px;
+width:250px;
+height:130px;
+float:left;
+background:#a33c4b;
+position:absolute;
+text-align:center;
+font-size:2em;
+color:white;
+cursor:pointer;
+}
+
+.six-pack {
+margin-left:250px;
+top:260px;
+width:250px;
+height:130px;
+float:left;
+background:#853126;
+position:absolute;
+text-align:center;
+font-size:2em;
+color:white;
+cursor:pointer;
+}
+
+.body-container {
+padding:10px;
+margin:auto;
+width:500px;
+margin-top:100px;
+position:relative;
+}

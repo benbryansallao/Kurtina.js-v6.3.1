@@ -1,13 +1,19 @@
 $(document).ready(function () {
 
 $("#reanimate").click(function() { //** function to open the overlay curtain *//
-  $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn({"opacity":"1"}, 400);
+  $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn({"opacity":"1"}, 400)
+
+	$(".six-packs")
+	   .delay(600).fadeIn({
+	   "opacity":"1"
+	   }, 600)
+	   });
 });
 
 
 	$("h2").click(function Curtain() { //* function of the curtain animation *//
 	
-	  $(".curtain-layer-one, h2").fadeOut({ 
+	  $(".curtain-layer-one, h2, .six-packs").fadeOut({ 
 	  "opacity":".1"
 	  }, 100)
 	   $(".curtain-layer-two")

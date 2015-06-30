@@ -5,7 +5,7 @@ $("#reanimate").click(function() {
 });
 
 
-	$("h2").click(function Ncurtain() { 
+	$("h2").click(function Curtain() { 
 	
 	  $(".curtain-layer-one, h2").fadeOut({
 	  "opacity":".1"

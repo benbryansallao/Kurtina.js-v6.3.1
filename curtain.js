@@ -3,7 +3,7 @@ $(document).ready(function () { /* Curtain.js Curtain style Overlay transition A
 var $CurtainElement = $('h2');
 var $CurtainReanimation = $('button');
  
- CurtainReady = (function() {
+ init:CurtainReady = (function() {
 	_CurtainreAnimation();
 	_sixPacksMenu();
 });

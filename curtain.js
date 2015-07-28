@@ -4,7 +4,7 @@ $(document).ready(function () {
  CurtainReady();
  });
  
- $(function CurtainReady() {
+ CurtainReady = (function() {
 	_CurtainreAnimation();
 	_sixPAcks();
 });
@@ -23,8 +23,7 @@ _CurtainreAnimation = (function() {
 
 
 $("#reanimate").click(function () {
-    _CurtainreAnimation();
-    _sixPAcks();	
+    CurtainReady();	
 });
 
 

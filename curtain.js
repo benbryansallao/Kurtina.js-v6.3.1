@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function () { /* Curtain.js Curtain style Overlay transition by: Ben Bryan Sallao*/
 	
  window.onload = $(function () {
  CurtainReady();

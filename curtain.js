@@ -1,6 +1,10 @@
 $(document).ready(function () {
 	
-var curtainReady = $( 'h2, .overlay-container' );
+var curtainReady = $(fnction () {
+	_CurtainreAnimation();
+	_sixPAcks();
+});
+
 
 _sixPAcks = (function () {
 		$(".six-packs")
@@ -9,11 +13,14 @@ _sixPAcks = (function () {
 	   }, 600)
 });
 
-
-$("#reanimate").click(function() {
+_CurtainreAnimation = (function() {
   $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn({"opacity":"1"}, 400)
-    _sixPAcks();
 	   });
+
+
+$("#reanimate").click(function () {
+    curtainReady();	
+});
 
 
 	$("h2").click(function Curtain() { 

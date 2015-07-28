@@ -71,4 +71,4 @@ $CurtainElement.click(function CurtainAnimationStart() {
     CurtainReady();	
 });
 
-});
+}) ();

@@ -25,8 +25,12 @@ $("#reanimate").click(function () {
 });
 
 
+var $CurtainElement = $('h2');
 
-	$("h2").click(function Curtain() { 
+
+
+
+	$CurtainElement.click((function CurtainAnimationStart() { 
 	
 	  $(".curtain-layer-one, h2, .six-packs").delay(100).fadeOut({
 	  "opacity":".1"

@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	
-var curtainReady = $(fnction () {
+var curtainReady = $(function () {
 	_CurtainreAnimation();
 	_sixPAcks();
 });

@@ -6,11 +6,11 @@ $(document).ready(function () { /* Curtain.js Curtain style Overlay transition b
  
  CurtainReady = (function() {
 	_CurtainreAnimation();
-	_sixPAcks();
+	_sixPacksMenu();
 });
 
 
-_sixPAcks = (function () {
+_sixPacksMenu = (function () {
 		$(".six-packs")
 	   .delay(600).fadeIn({
 	   "opacity":"1"

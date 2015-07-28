@@ -2,12 +2,17 @@ $(document).ready(function () {
 	
 var curtainReady = $( 'h2, .overlay-container' );
 
-$("#reanimate").click(function() {
-  $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn({"opacity":"1"}, 400)
-	$(".six-packs")
+_sixPAcks = (function () {
+		$(".six-packs")
 	   .delay(600).fadeIn({
 	   "opacity":"1"
 	   }, 600)
+});
+
+
+$("#reanimate").click(function() {
+  $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn({"opacity":"1"}, 400)
+    _sixPAcks();
 	   });
 
 

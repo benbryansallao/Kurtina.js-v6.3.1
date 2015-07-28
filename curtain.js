@@ -1,6 +1,7 @@
 $(document).ready(function () { /* Curtain.js Curtain style Overlay transition by: Ben Bryan Sallao*/
 	
 var $CurtainElement = $('h2');
+var $CurtainReanimation = $('button');
  
  CurtainReady = (function() {
 	_CurtainreAnimation();
@@ -18,13 +19,6 @@ _sixPacksMenu = (function () {
 _CurtainreAnimation = (function() {
   $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn({"opacity":"1"}, 400)
 	   });
-
-
-$("#reanimate").click(function () {
-    CurtainReady();	
-});
-
-
 
 
 $CurtainElement.click(function CurtainAnimationStart() { 
@@ -73,4 +67,8 @@ $CurtainElement.click(function CurtainAnimationStart() {
 	   "opacity":".1"
 	   }, 100); 
 	});
+ $CurtainReanimation.click(function () {
+    CurtainReady();	
+});
+
 });

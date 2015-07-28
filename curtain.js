@@ -1,6 +1,10 @@
 $(document).ready(function () {
 	
-var curtainReady = $(function () {
+ window.onload = $(function () {
+ CurtainReady();
+ });
+ 
+ $(function CurtainReady() {
 	_CurtainreAnimation();
 	_sixPAcks();
 });
@@ -19,8 +23,10 @@ _CurtainreAnimation = (function() {
 
 
 $("#reanimate").click(function () {
-    curtainReady();	
+    _CurtainreAnimation();
+    _sixPAcks();	
 });
+
 
 
 	$("h2").click(function Curtain() { 

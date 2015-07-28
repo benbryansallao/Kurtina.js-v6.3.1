@@ -1,6 +1,6 @@
 $(document).ready(function () { /* Curtain.js Curtain style Overlay transition by: Ben Bryan Sallao*/
 	
- 
+var $CurtainElement = $('h2');
  
  CurtainReady = (function() {
 	_CurtainreAnimation();
@@ -25,12 +25,9 @@ $("#reanimate").click(function () {
 });
 
 
-var $CurtainElement = $('h2');
 
 
-
-
-	$CurtainElement.click((function CurtainAnimationStart() { 
+$CurtainElement.click(function CurtainAnimationStart() { 
 	
 	  $(".curtain-layer-one, h2, .six-packs").delay(100).fadeOut({
 	  "opacity":".1"

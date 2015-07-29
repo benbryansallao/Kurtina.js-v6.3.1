@@ -1,7 +1,8 @@
 $(document).ready(function () { /* Curtain.js Curtain style Overlay transition Author: Ben Bryan Sallao*/
 	
-var $CurtainElement = $('h2');
+var $getCurtainElement = $('h2');
 var $CurtainReanimation = $('button');
+var $FirstTransitionElement = document.getElementById('first-transition');
  
  init:CurtainReady = (function() {
 	_CurtainreAnimation();
@@ -21,7 +22,7 @@ _CurtainreAnimation = (function() {
 	   });
 
 
-$CurtainElement.click(function CurtainAnimationStart() { 
+$getCurtainElement.click(function CurtainAnimationStart() { 
 	
 	  $(".curtain-layer-one, h2, .six-packs").delay(100).fadeOut({
 	  "opacity":".1"
@@ -68,7 +69,7 @@ $CurtainElement.click(function CurtainAnimationStart() {
 	   }, 100); 
 	});
  $CurtainReanimation.click(function () {
-    CurtainReady();	
+    init:CurtainReady();	
 });
 
 }) ();

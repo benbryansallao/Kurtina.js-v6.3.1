@@ -7,13 +7,6 @@
  **/
 
 $(document).ready(function () { 
-_AboutApp (function () {
- var this = ('this'),
- this.APP_NAME = 'Curtain Overlay',
- this.VERSION = 'ver1.0.0',
- this.APP_AUTHOR = 'Ben Bryan M. Sallao';
-});
-	
 
 var $getCurtainElement = $('h2');
 var $CurtainReanimation = $('button');

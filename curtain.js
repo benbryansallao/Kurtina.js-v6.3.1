@@ -10,7 +10,7 @@ $(document).ready(function () {
 
 var $getCurtainElement = $('h2');
 var $CurtainReanimation = $('button');
-var $FirstTransitionElement = document.getElementById('first-transition');
+var $PlayFirstTransitionElement = document.getElementById('play-first-transition');
  
  init:CurtainReady = (function() {
 	_CurtainreAnimation();

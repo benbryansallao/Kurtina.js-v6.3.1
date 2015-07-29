@@ -1,4 +1,12 @@
-$(document).ready(function () { /* Curtain.js Curtain style Overlay transition Author: Ben Bryan Sallao*/
+/** 
+ *  Curtain.js v1.0.0 
+ *  Curtain style Overlay transition 
+ *
+ *  Author: Ben Bryan Sallao 
+ *  Copyright 2015 
+ **/
+
+$(document).ready(function () { 
 	
 var $getCurtainElement = $('h2');
 var $CurtainReanimation = $('button');

@@ -3,7 +3,7 @@ $(document).ready(function () {
   var $getSecondTransitionPlay: $('.second');
   
   $getFirstTransitionPlay.click(function () {
-     CurtainAnimationStart();
+     test:CurtainAnimationStart();
   })
  
 

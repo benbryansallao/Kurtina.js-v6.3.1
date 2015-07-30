@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  var getFirstTransitionPlay = $('.first');
-  var getSecondTransitionPlay = $('.second');
+  var getFirstTransitionPlay: $('.first');
+  var getSecondTransitionPlay: $('.second');
 
 
 });

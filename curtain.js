@@ -142,7 +142,7 @@ PlayCurtainLayer10 = (function () {
  }; };
  
  function Play10() {
- if(CurtainTimerDefault>1) {
+ if(CurtainTimerDefault>1000) {
   setTimeout(PlayCurtainLayer10, 1000);
 
  }; };

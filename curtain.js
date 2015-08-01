@@ -10,15 +10,15 @@ $(document).ready(function () {
 
 var $CurtainReanimation = $('button'); /* Change the button to another variable name = http://www.benbryansallao.com */
 
-var CurtainTimerDefault = 0; /* Curtain animation default timer and or time when to start the animating */
+var CurtainTimerDefault = 0; /* Curtain animation default timer and or time when to start the animation */
 
  function CurtainPlayAnimation() {    /* Function where the curtain animation Start */
  setTimeout(CurtainPlayAnimation, 100);
  CurtainTimerDefault ++;  /* The time default was adding its value every milli-seconds */
  
- if(CurtainTimerDefault>100) {  /* set timeoout to use on every frame of animation was 100 milli-seconds */
-  setTimeout(PlayCurtainLayer1, 100);
-  CurtainTimerDefault = 1000;
+ if(CurtainTimerDefault>100) {  
+  setTimeout(PlayCurtainLayer1, 100); /* set timeoout to use on every frame of animation was 100 milli-seconds */
+  CurtainTimerDefault = 1000;  /* The time duration of the whole animation was 1000 or 1 second */
   Play2();
   Play3();
   Play4();

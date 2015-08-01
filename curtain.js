@@ -10,7 +10,7 @@ $(document).ready(function () {
 
 var $CurtainReanimation = $('button'); /* Change the button to another variable name = http://www.benbryansallao.com */
 
-var CurtainTimerDefault = 0; /* Curtain animation default timer and or time when to start the animation */
+var CurtainTimerDefault = 100; /* Curtain animation default timer and or time when to start the animation. At 100 or 10% of 1 second. */
 
  function CurtainPlayAnimation() {    /* Function where the curtain animation Start */
  setTimeout(CurtainPlayAnimation, 100);

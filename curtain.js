@@ -33,14 +33,12 @@ var CurtainTimerDefault = 100; /* Curtain animation default timer and or time wh
 
 
 $('h2').click(function() { 
-Inloading();
  CurtainPlayAnimation();
  });
  
  init:CurtainReady = (function() { /* Looping all functions to be ready on page(index.html) open */
 	_CurtainreAnimation();
 	_sixPacksMenu();
-	Outloading();
 });
 
 

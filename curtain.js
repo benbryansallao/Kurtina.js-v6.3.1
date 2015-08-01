@@ -8,76 +8,155 @@
 
 $(document).ready(function () { 
 
-var $getCurtainElement = $('h2');
 var $CurtainReanimation = $('button');
-var $PlayFirstTransitionElement = document.getElementById('play-first-transition');
+
+var CurtainTimerDefault = 0;
+
+ function CurtainPlayAnimation() {
+ setTimeout(CurtainPlayAnimation, 100);
+ CurtainTimerDefault ++;
+ 
+ if(CurtainTimerDefault>100) {
+  setTimeout(PlayCurtainLayer1, 100);
+  CurtainTimerDefault = 1000;
+  Play2();
+  Play3();
+  Play4();
+  Play5();
+  Play6();
+  Play7();
+  Play8();
+  Play9();
+  Play10();
+ };
+ };
+
+
+$('h2').click(function() {
+Inloading();
+ CurtainPlayAnimation();
+ });
  
  init:CurtainReady = (function() {
 	_CurtainreAnimation();
 	_sixPacksMenu();
+	Outloading();
 });
 
 
 _sixPacksMenu = (function () {
 		$(".six-packs")
-	   .delay(600).fadeIn({
-	   "opacity":"1"
-	   }, 600)
+	   .fadeIn({ "opacity" : "1" });
 });
 
 _CurtainreAnimation = (function() {
-  $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn({"opacity":"1"}, 400)
+  $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn({ "opacity" : "1" }, 400);
 	   });
 
 
-$getCurtainElement.click(function CurtainAnimationStart() { 
+PlayCurtainLayer1 = (function () { 
+	   Outloading();
+	  $(".curtain-layer-one, h2, .six-packs").fadeOut();
+	  });
+PlayCurtainLayer2 = (function () { 
+	   $(".curtain-layer-two").fadeOut();
+	   });
+PlayCurtainLayer3 = (function () { 
+	   $(".curtain-layer-three").fadeOut();
+	   });
+PlayCurtainLayer4 = (function () { 
+	   $(".curtain-layer-four").fadeOut();
+	   });
+PlayCurtainLayer5 = (function () { 
+	   $(".curtain-layer-five").fadeOut();
+	   });
+PlayCurtainLayer6 = (function () { 
+	   $(".curtain-layer-six").fadeOut();
+	   });
+PlayCurtainLayer7 = (function () { 
+	   $(".curtain-layer-seven").fadeOut();
+	   });
+PlayCurtainLayer8 = (function () { 
+	   $(".curtain-layer-eight").fadeOut(); 
+	   });
+PlayCurtainLayer9 = (function () { 
+	   $(".curtain-layer-nine").fadeOut();
+	   });
+PlayCurtainLayer10 = (function () { 
+	   $(".curtain-layer-ten, .overlay-container").fadeOut({ 
+	   "opacity":".1"
+	   }, 100);
+	   });
+	   
+	   
 	
-	  $(".curtain-layer-one, h2, .six-packs").delay(100).fadeOut({
-	  "opacity":".1"
-	  }, 100)
-	   $(".curtain-layer-two")
-	   .delay(200).fadeOut({
-	   "opacity":".1"
-	   }, 100)
-	   $(".curtain-layer-three")
-	   .delay(300).fadeOut({ 
-	   "opacity":".1"
-	   }, 100)
-	   $(".curtain-layer-four")
-	   .delay(400).fadeOut({
-	   "opacity":".1"
-	   }, 100)
-	   $(".curtain-layer-five")
-	   .delay(500).fadeOut({
-	   "opacity":".1"
-	   }, 100)
-	   $(".curtain-layer-six")
-	   .delay(600).fadeOut({ 
-	   "opacity":".1"
-	   }, 100)
-	   $(".curtain-layer-seven")
-	   .delay(700).fadeOut({
-	   "opacity":".1"
-	   }, 100)
-	   $(".curtain-layer-eight")
-	   .delay(800).fadeOut({ 
-	   "opacity":".1"
-	   }, 100)
-	   $(".curtain-layer-nine")
-	   .delay(900).fadeOut({ 
-	   "opacity":".1"
-	   }, 100)
-	   $(".curtain-layer-ten")
-	   .delay(1000).fadeOut({ 
-	   "opacity":".1"
-	   }, 100)
-	   $(".overlay-container")
-	   .delay(1100).fadeOut({
-	   "opacity":".1"
-	   }, 100); 
-	});
- $CurtainReanimation.click(function () {
-    init:CurtainReady();	
+
+ 
+ function Play2() {
+ if(CurtainTimerDefault>200) {
+  setTimeout(PlayCurtainLayer2, 200);
+  
+  
+ }; };
+ 
+ function Play3() {
+ if(CurtainTimerDefault>300) {
+  setTimeout(PlayCurtainLayer3, 300);
+
+ }; };
+ 
+ function Play4() {
+ if(CurtainTimerDefault>400) {
+  setTimeout(PlayCurtainLayer4, 400);
+
+ }; };
+ 
+ function Play5() {
+ if(CurtainTimerDefault>500) {
+  setTimeout(PlayCurtainLayer5, 500);
+
+ }; };
+ 
+ function Play6() {
+ if(CurtainTimerDefault>600) {
+  setTimeout(PlayCurtainLayer6, 600);
+
+ }; };
+ 
+ function Play7() {
+ if(CurtainTimerDefault>700) {
+  setTimeout(PlayCurtainLayer7, 700);
+
+ }; };
+ 
+ function Play8() {
+ if(CurtainTimerDefault>800) {
+  setTimeout(PlayCurtainLayer8, 800);
+
+ }; };
+ 
+ function Play9() {
+ if(CurtainTimerDefault>900) {
+  setTimeout(PlayCurtainLayer9, 900);
+
+ }; };
+ 
+ function Play10() {
+ if(CurtainTimerDefault>1) {
+  setTimeout(PlayCurtainLayer10, 1000);
+
+ }; };
+
+function Inloading() {
+$(".loading").fadeIn({ "oppacity" : "1" });
+};
+function Outloading() {
+$(".loading").fadeOut({});
+};
+	
+ $CurtainReanimation.click(function Reanimate() {
+   init:CurtainReady();	
+   Reanimate();
 });
 
 }) ();

@@ -8,15 +8,15 @@
 
 $(document).ready(function () { 
 
-var $CurtainReanimation = $('button');
+var $CurtainReanimation = $('button'); /* Change the button to another variable name = http://www.benbryansallao.com */
 
-var CurtainTimerDefault = 0;
+var CurtainTimerDefault = 0; /* Curtain animation default timer and or time when to start the animating */
 
- function CurtainPlayAnimation() {
+ function CurtainPlayAnimation() {    /* Function where the curtain animation Start */
  setTimeout(CurtainPlayAnimation, 100);
- CurtainTimerDefault ++;
+ CurtainTimerDefault ++;  /* The time default was adding its value every milli-seconds */
  
- if(CurtainTimerDefault>100) {
+ if(CurtainTimerDefault>100) {  /* set timeoout to use on every frame of animation was 100 milli-seconds */
   setTimeout(PlayCurtainLayer1, 100);
   CurtainTimerDefault = 1000;
   Play2();
@@ -32,12 +32,12 @@ var CurtainTimerDefault = 0;
  };
 
 
-$('h2').click(function() {
+$('h2').click(function() { 
 Inloading();
  CurtainPlayAnimation();
  });
  
- init:CurtainReady = (function() {
+ init:CurtainReady = (function() { /* Looping all functions to be ready on page(index.html) open */
 	_CurtainreAnimation();
 	_sixPacksMenu();
 	Outloading();
@@ -154,7 +154,7 @@ function Outloading() {
 $(".loading").fadeOut({});
 };
 	
- $CurtainReanimation.click(function Reanimate() {
+ $CurtainReanimation.click(function Reanimate() { /* When request reanimation, this function will call the CurtainReady like on window load */
    init:CurtainReady();	
    Reanimate();
 });

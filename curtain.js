@@ -152,7 +152,7 @@ function Outloading() {
 $(".loading").fadeOut({});
 };
 	
- $CurtainReanimation.click(function Reanimate() { /* When request reanimation, this function will call the CurtainReady like on window load */
+ $CurtainReanimation.click(function Reanimate() { /* When request reanimation, this function will be called the CurtainReady like on window load */
    init:CurtainReady();	
    Reanimate();
 });

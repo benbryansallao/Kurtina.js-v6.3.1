@@ -48,40 +48,40 @@ _sixPacksMenu = (function () {
 });
 
 _CurtainreAnimation = (function() {
-  $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").show();
+  $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn({ "opacity" : "1" }, 400);
 	   });
 
 
 PlayCurtainLayer1 = (function () { 
 	   Outloading();
-	  $(".curtain-layer-one, h2, .six-packs").hide();
+	  $(".curtain-layer-one, h2, .six-packs").fadeOut();
 	  });
 PlayCurtainLayer2 = (function () { 
-	   $(".curtain-layer-two").hide();
+	   $(".curtain-layer-two").fadeOut();
 	   });
 PlayCurtainLayer3 = (function () { 
-	   $(".curtain-layer-three").hide();
+	   $(".curtain-layer-three").fadeOut();
 	   });
 PlayCurtainLayer4 = (function () { 
-	   $(".curtain-layer-four").hide();
+	   $(".curtain-layer-four").fadeOut();
 	   });
 PlayCurtainLayer5 = (function () { 
-	   $(".curtain-layer-five").hide();
+	   $(".curtain-layer-five").fadeOut();
 	   });
 PlayCurtainLayer6 = (function () { 
-	   $(".curtain-layer-six").hide();
+	   $(".curtain-layer-six").fadeOut();
 	   });
 PlayCurtainLayer7 = (function () { 
-	   $(".curtain-layer-seven").hide();
+	   $(".curtain-layer-seven").fadeOut();
 	   });
 PlayCurtainLayer8 = (function () { 
-	   $(".curtain-layer-eight").hide(); 
+	   $(".curtain-layer-eight").fadeOut(); 
 	   });
 PlayCurtainLayer9 = (function () { 
-	   $(".curtain-layer-nine").hide();
+	   $(".curtain-layer-nine").fadeOut();
 	   });
 PlayCurtainLayer10 = (function () { 
-	   $(".curtain-layer-ten, .overlay-container").hide();
+	   $(".curtain-layer-ten, .overlay-container").fadeOut();
 	   });
 	   
 	   

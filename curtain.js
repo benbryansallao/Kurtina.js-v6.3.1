@@ -43,7 +43,7 @@ var $reloadCurtain = function() { window.location.href='index.html'}; _Curtainre
 /*
 * In using of an event handler to animate this Curtain.js layers, it is advisable to use "fadeIn/Out" and not hide/show or remove/addClass,
 * because of the easing effects and transition results' discrepancies.
-* However, on the version2 the function and format could be more intelligent.
+* On preview guaranteed on the version2 the function and format could be more intelligent.
 */
 var Inloading = function() { $(".loading").show(); }, Outloading = function() { $(".loading").hide(); };
 

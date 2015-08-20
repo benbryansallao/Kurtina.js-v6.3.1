@@ -32,7 +32,7 @@ $TriggerAnimation.click(function() {
 	Inloading(), CurtainPlayAnimation();
 });
 
-var _curtainInfusion = function() {
+var _curtainInfusion = function() { /* Curtain Elements divs'INFUSION*/
 }
 _sixPacksMenu = (function () {
 	$(".six-packs").append("<div class='six-packs-menu'></div>");

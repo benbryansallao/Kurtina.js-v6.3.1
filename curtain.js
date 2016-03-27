@@ -1,9 +1,10 @@
 /** 
- *  Curtain.js v1.0.0 
- *  Curtain-Style-Overlay-Transition 
+ *  Curtain.js v2.1.0 
+ *  Curtain style Overlay transition 
  *
  *  Author: Ben Bryan Sallao 
- *  Copyright 2015 
+ *  Copyright 2015-2016
+ *  Istudyo Nonato
  **/
 /* About Curtain.js the exact curtain/blinds simulation from the house of Tony Stark in the Iron Man1 Movie */
 

@@ -6,43 +6,19 @@
  *  Copyright 2015 
  **/
 /* About Curtain.js the exact curtain/blinds simulation from the house of Tony Stark in the Iron Man1 Movie */
-$('document').ready(function () { /* DOM Ready */
-var $TriggerAnimation = $('h2'),
-	CurtainTimerDefault = 100, /* Time where the animation initiate at 100 milli-seconds or 10% of 1 second */
-	$request_Reanimation = $('button');
-var $LoopedCurtainlayers$Ready = function() {
-	playAnimationCurtainLayer2() || playAnimationCurtainLayer3() || playAnimationCurtainLayer4() || playAnimationCurtainLayer5()
-	|| playAnimationCurtainLayer6() || playAnimationCurtainLayer7() || playAnimationCurtainLayer8() || playAnimationCurtainLayer9() ||
-	playAnimationCurtainLayer10(); };
-$CurtainReady = (function() { /* On page open (index.html) this function will be called automatically. */
-	Outloading();
-	_CurtainreAnimation();
-});
-function CurtainPlayAnimation() {
-	setTimeout(CurtainPlayAnimation, 100);
-	CurtainTimerDefault ++;
-if(CurtainTimerDefault>100) {
-	setTimeout(PlayCurtainLayer1, 100);
-	$LoopedCurtainlayers$Ready();
-	CurtainTimerDefault = 1000; /* The time of the whole animation takes about 1000 milli-seconds or 1 second. */
-}
-};
-$TriggerAnimation.click(function() {
-	Inloading(), CurtainPlayAnimation();
-});
 
-var _curtainInfusion = function() { /* Curtain Elements divs'INFUSION*/
-}
-_sixPacksMenu = (function () {
-	$("<div class='six-packs-menu'></div>").appendTo(".six-packs");
-});
-
-var $reloadCurtain = function() { window.location.href='index.html'}; _CurtainreAnimation = (function() { $("h2 && .overlay-container && .curtain-layer-one && .curtain-layer-two && .curtain-layer-three && .curtain-layer-four && .curtain-layer-five && .curtain-layer-six && .curtain-layer-seven && .curtain-layer-eight && .curtain-layer-nine && .curtain-layer-ten").fadeIn(); }); PlayCurtainLayer1 = (function () { $(".curtain-layer-one, h2, .six-packs").fadeOut(); }); PlayCurtainLayer2 = (function () { $(".curtain-layer-two").fadeOut(); }); PlayCurtainLayer3 = (function () { $(".curtain-layer-three").fadeOut(); }); PlayCurtainLayer4 = (function () { $(".curtain-layer-four").fadeOut(); }); PlayCurtainLayer5 = (function () { $(".curtain-layer-five").fadeOut(); }); PlayCurtainLayer6 = (function () { $(".curtain-layer-six").fadeOut(); }); PlayCurtainLayer7 = (function () { $(".curtain-layer-seven").fadeOut(); }); PlayCurtainLayer8 = (function () { $(".curtain-layer-eight").fadeOut(); }); PlayCurtainLayer9 = (function () { $(".curtain-layer-nine").fadeOut(); }); PlayCurtainLayer10 = (function () { $(".curtain-layer-ten, .overlay-container").fadeOut(); }); function playAnimationCurtainLayer2() { if(CurtainTimerDefault>200) { setTimeout(PlayCurtainLayer2, 200); }; }; function playAnimationCurtainLayer3() { if(CurtainTimerDefault>300) { setTimeout(PlayCurtainLayer3, 300); }; }; function playAnimationCurtainLayer4() { if(CurtainTimerDefault>400) { setTimeout(PlayCurtainLayer4, 400); }; }; function playAnimationCurtainLayer5() { if(CurtainTimerDefault>500) { setTimeout(PlayCurtainLayer5, 500); }; }; function playAnimationCurtainLayer6() { if(CurtainTimerDefault>600) { setTimeout(PlayCurtainLayer6, 600); }; }; function playAnimationCurtainLayer7() { if(CurtainTimerDefault>700) { setTimeout(PlayCurtainLayer7, 700); }; }; function playAnimationCurtainLayer8() { if(CurtainTimerDefault>800) { setTimeout(PlayCurtainLayer8, 800); }; }; function playAnimationCurtainLayer9() { if(CurtainTimerDefault>900) { setTimeout(PlayCurtainLayer9, 900); }; }; function playAnimationCurtainLayer10() { if(CurtainTimerDefault>1000) { setTimeout(PlayCurtainLayer10, 1000); }; };
-
-var Inloading = function() { $(".loading").show(); }, Outloading = function() { $(".loading").hide(); };
-
-$request_Reanimation.click(function Reanimate () { /* Request curtain re-animation (function to reload the page)*/
-	$reloadCurtain() && Outloading();
-	die();
-});
-}) ();
+$(document).ready(function () { 
+var tr=document.getElementById('reanimate'),
+tf=document.getElementById('animation'),
+button=$('button'),
+to=$('h2'),
+n=["100"],
+cm=n,
+el=function(){ee||dd||ff},
+o=function()
+{    
+ on(o,100);cm++;if(cm>=100){on(pa,100),cm=1000,ab();};
+ };
+var es=to;es.click(function(){o();});x=(function(){cr();});cr=(function(){xd;});
+var istudyononatoReady=x;ab=function(){if(cm>=200){on(pb,200)}if(cm>300){on(pc,300)}if(cm>=400){on(pd,400)}if(cm>500){on(pe,500);}if(cm>600){on(pf,600);}if(cm>700){on(pg,700);}if(cm>800){on(ph,800);}if(cm>900){on(pi,900);}if(cm>=1000){on(pj,1000);}};var xd = $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn();var pja=$(".curtain-layer-ten, .overlay-container"),pia=$(".curtain-layer-nine"),pha=$(".curtain-layer-eight"),pga=$(".curtain-layer-seven"),pfa=$(".curtain-layer-six"),pea=$(".curtain-layer-five"),pda=$(".curtain-layer-four"),pca=$(".curtain-layer-three"),pba=$(".curtain-layer-two"),paa=$(".curtain-layer-one, h2"),on=setTimeout; pa=(function(){paa.fadeOut();});pb=(function(){pba.fadeOut();});pc=(function(){pca.fadeOut();});pd=(function(){pda.fadeOut();});pe=(function(){pea.fadeOut();});pf=(function (){pfa.fadeOut();});pg=(function (){pga.fadeOut();});ph=(function(){pha.fadeOut()});pi=(function(){pia.fadeOut()});pj=function(){pja.fadeOut();};var wh=button;wh.click(function(){window.location.href='index.html';});
+})();

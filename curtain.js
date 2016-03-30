@@ -1,6 +1,6 @@
 /** 
- *  Curtain.js v2.2.1 
- *  Curtain style Overlay transition 
+ *  Curtain.js v3.2.0 
+ *  Curtain-Style-Overlay-Transition 
  *
  *  Author: Ben Bryan Sallao 
  *  Copyright 2015-2016
@@ -15,12 +15,15 @@ button=$('button'),
 to=$('h2'),
 n=["100"],
 cm=n,
-i=1,
-el=function(){e||d||f},
+g=Math.round(cm*cm)/10,
+h=Math.ceil(50.1),
+ab=function(){p1 || p2 || p3 || p4 || p5 || p6 || p7 || p8|| p9;},
 o=function()
 {    
- on(o,cm),cm++;if(cm>=cm&&cm===101){on(pa,cm),cm=1000,ab();};
+ on(o,cm),cm++;if(cm>=cm){on(pa,cm),cm=g,ab;};
+ 
  };
 var es=to;es.click(function(){o();});x=(function(){cr();});cr=(function(){xd;});
-var istudyononatoReady=x;ab=function(){if(cm>=200){on(pb,200)}if(cm>300){on(pc,300)}if(cm>=400){on(pd,400)}if(cm>500){on(pe,500);}if(cm>600){on(pf,600);}if(cm>700){on(pg,700);}if(cm>800){on(ph,800);}if(cm>900){on(pi,900);}if(cm>=1000){on(pj,1000);}};var xd = $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn();var pja=$(".curtain-layer-ten, .overlay-container"),pia=$(".curtain-layer-nine"),pha=$(".curtain-layer-eight"),pga=$(".curtain-layer-seven"),pfa=$(".curtain-layer-six"),pea=$(".curtain-layer-five"),pda=$(".curtain-layer-four"),pca=$(".curtain-layer-three"),pba=$(".curtain-layer-two"),paa=$(".curtain-layer-one, h2"),on=setTimeout; pa=(function(){paa.fadeOut();});pb=(function(){pba.fadeOut();});pc=(function(){pca.fadeOut();});pd=(function(){pda.fadeOut();});pe=(function(){pea.fadeOut();});pf=(function (){pfa.fadeOut();});pg=(function (){pga.fadeOut();});ph=(function(){pha.fadeOut()});pi=(function(){pia.fadeOut()});pj=function(){pja.fadeOut();};var wh=button;wh.click(function(){window.location.href='index.html';});
+var istudyononatoReady=x;
+var p1=function() {if(cm>kk){on(pb,kk);var kk=Math.pow(h,2)-g-g-400.10;}};var p2=function() {if(cm>kl){on(pc,kl);var kl=Math.pow(cm,2)/cm-700;}};var p3=function() {if(cm>km){on(pd,km);var km=Math.pow(cm,2)/cm-600;}};var p4=function() {if(cm>kn){on(pe,kn);var kn=Math.pow(cm,2)/cm-500;}alert(kn);};var p5=function() {if(cm=>ko){on(pf,ko);var ko=Math.pow(cm,2)/cm-400;}};var p6=function() {if(cm>kp){on(pg,kp);var kp=Math.pow(cm,2)/cm-300;}};var p7=function() {if(cm>kq){on(ph,kq);}var kq=Math.pow(cm,2)/cm-200;};var p8=function() {if(cm>kr){on(pi,kr);}var kr=Math.pow(cm,2)/cm-cm;};var p9=function() {if(cm=>g){on(pj,g);}};var xd = $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn();var pja=$(".curtain-layer-ten, .overlay-container"),pia=$(".curtain-layer-nine"),pha=$(".curtain-layer-eight"),pga=$(".curtain-layer-seven"),pfa=$(".curtain-layer-six"),pea=$(".curtain-layer-five"),pda=$(".curtain-layer-four"),pca=$(".curtain-layer-three"),pba=$(".curtain-layer-two"),paa=$(".curtain-layer-one, h2"),on=setTimeout; pa=(function(){paa.fadeOut();});pb=(function(){pba.fadeOut();});pc=(function(){pca.fadeOut();});pd=(function(){pda.fadeOut();});pe=(function(){pea.fadeOut();});pf=(function (){pfa.fadeOut();});pg=(function (){pga.fadeOut();});ph=(function(){pha.fadeOut()});pi=(function(){pia.fadeOut()});pj=function(){pja.fadeOut();};var wh=button;wh.click(function(){window.location.href='index.html';});
 })();

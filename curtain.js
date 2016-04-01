@@ -13,7 +13,7 @@ $(document).ready(function () {
 var r=document.getElementById('reanimate'),
 button=$('button'),
 to=$('h2'),
-n=["100"],
+n=Math.round(10*10),
 cm=n,
 /* Mathematical computation on Curtain/blinds animation */
 y= Math.sqrt(cm), 

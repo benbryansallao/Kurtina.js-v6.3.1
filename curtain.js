@@ -9,7 +9,7 @@
  *  About Curtain.js the exact curtain/blinds simulation from the house of Tony Stark in the Iron Man1 Movie
  **/
 
-$(document).ready(function () { 
+$(document).ready(function () {  /* DOM Ready */
 var r=document.getElementById('reanimate'),
 button=$('button'),
 to=$('h2'),
@@ -17,8 +17,8 @@ to=$('h2'),
 /* Mathematical computation on Curtain/blinds animation */
 n=Math.round(10*Math.pow(Math.ceil(1.1),Math.ceil(1.2)))+Math.round(10*Math.ceil(3.1))+Math.ceil(9.23*2)+1.0, /* Computation where the curtain animation initiates at 10% of 1 second */
 
-cm=n,y= Math.sqrt(Math.ceil(n/2.0)*Math.round(Math.ceil(0.3)*1.0)*2.0), /* Computation of the whole curtain animation 1000 milliseconds or 1 second */
-
+cm=n,
+y= Math.sqrt(Math.ceil(n/2.0)*Math.round(Math.ceil(0.3)*1.0)*2.0), /* Computation of the whole curtain animation 1000 milliseconds or 1 second */
 g= Math.round(cm*Math.ceil(9.23*1.0))*n/n, 
 h= Math.ceil(n/2)*Math.round(Math.ceil(0.1)*1), 
 l=Math.round(y*y)*Math.ceil(1.10)*1.0,xk=Math.round(l*Math.ceil(1.12))-cm,km=Math.round(h*2)+xk,kn=Math.round(n,2)+l+xk-n,ko=Math.pow(cm,2)/10-km,kp= Math.pow(h,2)-g-g+l,kq=Math.round(km*2),kr=Math.round(l*2)+kn,

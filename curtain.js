@@ -1,5 +1,5 @@
 /** 
- *  Curtain.js v5.3.0
+ *  Curtain.js v6.3.1 
  *  Curtain-Style-Overlay-Transition 
  *
  *  Author: Ben Bryan Sallao 
@@ -8,28 +8,73 @@
  *
  *  About Curtain.js the exact curtain/blinds simulation from the house of Tony Stark in the Iron Man1 Movie
  **/
-$(document).ready(function () {  /* DOM Ready */
-var r=document.getElementById('reanimate'),
-button=$('button'),
-to=$('h2'),
 
-/* Mathematical computation on Curtain/blinds animation */
-n=Math.round(10*Math.pow(Math.ceil(1.1),Math.ceil(1.2)))+Math.round(10*Math.ceil(3.1))+Math.ceil(9.23*2)+1.0, /* Computation where the curtain animation initiates at 10% of 1 second */
-
-cm=n,
-y= Math.sqrt(Math.ceil(n/2.0)*Math.round(Math.ceil(0.3)*1.0)*2.0), /* Computation of the whole curtain animation 1000 milliseconds or 1 second */
-g= Math.round(cm*Math.ceil(9.23*1.0))*n/n, 
-h= Math.ceil(n/2)*Math.round(Math.ceil(0.1)*1), 
-l=Math.round(y*y)*Math.ceil(1.10)*1.0,xk=Math.round(l*Math.ceil(1.12))-cm,km=Math.round(h*2)+xk,kn=Math.round(n,2)+l+xk-n,ko=Math.pow(cm,2)/10-km,kp= Math.pow(h,2)-g-g+l,kq=Math.round(km*2),kr=Math.round(l*2)+kn,
-
-o=function()
-{    
- on(o,cm),cm++;if(cm>=cm){on(pa,cm),cm=g,ab();}; /* Commencing curtain animation... */
-};
-
-var es=to;es.click(function(){o();});x=(function(){cr();});cr=(function(){xd;});
-var istudyononatoReady=x;
-
-/* Discrete functions to constitute simulation with its mathematical computation equivalent */
-ab=function() {if(cm>l){on(pb,l);}if(cm>xk){on(pc,xk);};if(cm>km){on(pd,km);};if(cm>kn){on(pe,kn);};if(cm=>ko){on(pf,ko);};if(cm>kp){on(pg,kp);};if(cm>kq){on(ph,kq);};if(cm>kr){on(pi,kr);};if(cm=>g){on(pj,g);};};var xd = $("h2, .overlay-container, .curtain-layer-one, .curtain-layer-two, .curtain-layer-three, .curtain-layer-four, .curtain-layer-five, .curtain-layer-six, .curtain-layer-seven, .curtain-layer-eight, .curtain-layer-nine, .curtain-layer-ten").fadeIn();var pja=$(".curtain-layer-ten, .overlay-container"),pia=$(".curtain-layer-nine"),pha=$(".curtain-layer-eight"),pga=$(".curtain-layer-seven"),pfa=$(".curtain-layer-six"),pea=$(".curtain-layer-five"),pda=$(".curtain-layer-four"),pca=$(".curtain-layer-three"),pba=$(".curtain-layer-two"),paa=$(".curtain-layer-one, h2"),on=setTimeout; pa=(function(){paa.fadeOut();});pb=(function(){pba.fadeOut();});pc=(function(){pca.fadeOut();});pd=(function(){pda.fadeOut();});pe=(function(){pea.fadeOut();});pf=(function (){pfa.fadeOut();});pg=(function (){pga.fadeOut();});ph=(function(){pha.fadeOut()});pi=(function(){pia.fadeOut()});pj=function(){pja.fadeOut();};var wh=button;wh.click(function(){window.location.href='index.html';});
-})();
+(function() {
+    var FX = {
+        easing: {
+            linear: function(progress) {
+                return progress;
+            },
+            quadratic: function(progress) {
+                return Math.pow(progress, 2);
+            },
+            swing: function(progress) {
+                return 0.5 - Math.cos(progress * Math.PI) / 2;
+            },
+            circ: function(progress) {
+                return 1 - Math.sin(Math.acos(progress));
+            },
+            back: function(progress, x) {
+                return Math.pow(progress, 2) * ((x + 1) * progress - x);
+            },
+            bounce: function(progress) {
+                for (var a = 0, b = 1, result; 1; a += b, b /= 2) {
+                    if (progress >= (7 - 4 * a) / 11) {
+                        return -Math.pow((11 - 6 * a - 11 * progress) / 4, 2) + Math.pow(b, 2);
+                    }
+                }
+            },
+            elastic: function(progress, x) {
+                return Math.pow(2, 10 * (progress - 1)) * Math.cos(20 * Math.PI * x / 3 * progress);
+            }
+        },
+        animate: function(options) {
+            var start = new Date;
+            var id = setInterval(function() {
+                var timePassed = new Date - start;
+                var progress = timePassed / options.duration;
+                if (progress > 1) {
+                    progress = 1;
+                }
+                options.progress = progress;
+                var delta = options.delta(progress);
+                options.step(delta);
+                if (progress == 1) {
+                    clearInterval(id);
+                    options.complete();
+                }
+            }, options.delay || 10);
+        },
+        fadeOut: function(element, options) {
+            var to = 1;
+            this.animate({
+                duration: options.duration,
+                delta: function(progress) {
+                    progress = this.progress;
+                    return FX.easing.circ(progress);
+                },
+                complete: options.complete,
+                step: function(delta) {
+                    element.style.opacity = to - delta;
+                }
+            });
+        },
+        fadeIn: function(element, options) {
+            var to = 0;
+            this.animate({
+                duration: options.duration,
+                delta: function(progress) {
+                    progress = this.progress;
+                    return FX.easing.swing(progress);
+                },
+                complete: options.complete, step: function(delta) {  element.style.opacity = to + delta; } });     } }; window.FX = FX; }) (); document.getElementById('out').addEventListener('click', function() { FX.fadeOut(document.getElementById('out'), { duration: 10, complete: function() {play1();   }});}, false); function play1() { FX.fadeOut(document.getElementById('curtain-layer-one'), { duration: 200, complete: function() {play2(); }  });} function play2() { FX.fadeOut(document.getElementById('curtain-layer-two'), { duration: 200, complete: function() {play3(); } });} function play3() { FX.fadeOut(document.getElementById('curtain-layer-three'), { duration: 200, complete: function() {play4();  } });} function play4() { FX.fadeOut(document.getElementById('curtain-layer-four'), { duration: 200, complete: function() {play5();  } });} function play5() { FX.fadeOut(document.getElementById('curtain-layer-five'), { duration: 200, complete: function() {play6(); }});} function play6() { FX.fadeOut(document.getElementById('curtain-layer-six'), { duration: 200, complete: function() {play7();  } });} function play7() {FX.fadeOut(document.getElementById('curtain-layer-seven'), { duration: 200,  complete: function() {	play8();   }  });} function play8() { FX.fadeOut(document.getElementById('curtain-layer-eight'), { duration: 200, complete: function() {play9(); }});} function play9() { FX.fadeOut(document.getElementById('curtain-layer-nine'), { duration: 200, complete: function() {play10(); } });} function play10() { FX.fadeOut(document.getElementById('curtain-layer-ten').style.display="none", { duration: 200, complete: function() {	play11(); }});} function play11() { FX.fadeOut(document.getElementById('overlay-container'), { duration: 20, complete: function() { play12(); } });}
